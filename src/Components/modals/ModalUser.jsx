@@ -16,7 +16,7 @@ function MyVerticallyCenteredModal(props) {
     console.log(id)
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/user/updateUser/${id}`,
+        `http://82.180.130.113/api/user/updateUser/${id}`,
         data,
         {
           headers: { Authorization: `Bearer ${token}` },

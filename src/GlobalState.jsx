@@ -40,7 +40,7 @@ export const DataProvider = ({children}) => {
       }
       const getOrdercount = async()=>{
         try{
-          const res = await axios.get("http://localhost:5000/api/order/getCount" , {headers : {Authorization: `bearer ${token}`} , withCredentials:true} );
+          const res = await axios.get("http://82.180.130.113/api/order/getCount" , {headers : {Authorization: `bearer ${token}`} , withCredentials:true} );
           console.log(res.data);
           SetOrderCount(res.data)
         }catch(err){
